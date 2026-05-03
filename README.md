@@ -42,6 +42,18 @@ Here is a look at the system in action:
 | :---: | :---: |
 | <img src="assets/images/image7.png" width="400"> | <img src="assets/images/image8.png" width="400"> |
 
+| View 9 | View 10 |
+| :---: | :---: |
+| <img src="assets/images/image9.png" width="400"> | <img src="assets/images/image10.png" width="400"> |
+
+| View 11 | View 12 |
+| :---: | :---: |
+| <img src="assets/images/image11.png" width="400"> | <img src="assets/images/image12.png" width="400"> |
+
+| View 13 | View 14 |
+| :---: | :---: |
+| <img src="assets/images/image13.png" width="400"> | <img src="assets/images/image14.png" width="400"> |
+
 </details>
 
 ## 🛠️ Tech Stack & Architecture
