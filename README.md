@@ -68,3 +68,5 @@ Here is a look at the system in action:
 4. Create a MySQL database named `finance_management`.
 5. Ensure `php/db.php` has your correct database credentials.
 6. Open your browser and navigate to `http://localhost/finance-management-system`.
+
+
