@@ -1,36 +1,58 @@
-# Finance Management System
+<div align="center">
+  # 🚀 Finance Management System
 
-A lightweight, full-stack web application designed to help users track their income and expenses, manage their financial profiles, and analyze their spending habits.
+  *A sleek, full-stack application to elegantly track income, manage expenses, and visualize your financial health.*
 
-## 🚀 Features
+  [![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)](https://php.net)
+  [![MySQL](https://img.shields.io/badge/MySQL-00000F?style=for-the-badge&logo=mysql&logoColor=white)](https://www.mysql.com/)
+  [![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Glossary/HTML5)
+  [![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
+  [![Vanilla JS](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+</div>
 
-- **Secure User Authentication**: Registration and login with hashed passwords.
-- **Transaction Tracking**: Easily add, edit, and delete daily income and expenses.
-- **Dashboard & Analytics**: Visualize your financial standing.
-- **Data Export**: Export your transaction history directly to CSV.
-- **Profile Management**: Keep your user profile up to date.
+---
 
-## 🛠️ Tech Stack
+## ✨ Features
+- 🔐 **Secure User Authentication:** Register and log in safely.
+- 💸 **Transaction Tracking:** Effortlessly Add, Edit, and Delete daily income and expenses.
+- 📊 **Dynamic Dashboard:** Get an instant visual overview of your financial standing.
+- 📁 **Data Export:** Export your transaction history directly to CSV format.
+- 👤 **Profile Management:** Keep your user profile details up-to-date.
 
-- **Frontend**: HTML5, CSS3, Vanilla JavaScript
-- **Backend**: PHP
-- **Database**: MySQL
+## 📸 Screenshots
+
+Here is a look at the system in action:
+
+| Dashboard | Transactions |
+| :---: | :---: |
+| <img src="assets/images/image1.png" width="400"> | <img src="assets/images/image2.png" width="400"> |
+
+| Reports | Profile |
+| :---: | :---: |
+| <img src="assets/images/image3.png" width="400"> | <img src="assets/images/image4.png" width="400"> |
+
+<details>
+<summary><b>Click here to view more screenshots</b></summary>
+
+| View 5 | View 6 |
+| :---: | :---: |
+| <img src="assets/images/image5.png" width="400"> | <img src="assets/images/image6.png" width="400"> |
+
+| View 7 | View 8 |
+| :---: | :---: |
+| <img src="assets/images/image7.png" width="400"> | <img src="assets/images/image8.png" width="400"> |
+
+</details>
+
+## 🛠️ Tech Stack & Architecture
+- **Frontend**: Responsive HTML5, CSS3, and Vanilla JavaScript.
+- **Backend**: Core PHP handling server-side logic.
+- **Database**: MySQL via the `mysqli` object-oriented approach.
 
 ## ⚙️ Local Setup Instructions
-
-1. Clone this repository:
-   ```bash
-   git clone https://github.com/yourusername/finance-management-system.git
-   ```
-2. Move the project folder to your local server directory (e.g., `C:\xampp\htdocs\` for XAMPP).
+1. Clone this repository: `git clone https://github.com/ritesh-0608/FINANCE-MANAGEMENTSYSTEM.git`
+2. Move the project folder into your local server's root directory (e.g., `C:\xampp\htdocs\`).
 3. Start **Apache** and **MySQL** via your XAMPP Control Panel.
 4. Create a MySQL database named `finance_management`.
-5. Import the provided `database.sql` file into your newly created database. *(Note: Make sure to create this file from your phpMyAdmin!)*
-6. Update `php/db.php` if your local database credentials differ from the defaults.
-7. Open your browser and navigate to `http://localhost/finance-management-system`.
-
-## 🛡️ Security
-
-This project implements standard security practices including:
-- Prepared statements (`mysqli_stmt`) to prevent SQL Injection.
-- Password hashing using `password_hash()` and `password_verify()`.
+5. Ensure `php/db.php` has your correct database credentials.
+6. Open your browser and navigate to `http://localhost/finance-management-system`.
