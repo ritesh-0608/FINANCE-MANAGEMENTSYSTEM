@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add/Edit Transaction</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <div class="sidebar">
+            <ul>
+                <li><a href="add_edit_transaction.html" class="selected">Add/Edit Transaction</a></li>
+                <li><a href="transaction_history.html">Transaction History</a></li>
+                <li><a href="analysis.html">Analysis</a></li>
+                <li><a href="#" onclick="showProfile()">Profile</a></li>
+                <li><a href="#" onclick="logout()">Logout</a></li>
+            </ul>
+        </div>
+        
+        <div class="content">
+            <h2 id="formTitle">Add/Edit Transaction</h2>
+            <form id="transactionForm" action="php/save_transaction.php" method="post">
+                <input type="hidden" id="transactionId" name="id">
+                
+                <label for="category">Category</label>
+                <select id="category" name="category" required>
+                    <option value="income">Income</option>
+                    <option value="expense">Expense</option>
+                </select>
+                
+                <label for="type">Type</label>
+                <select id="type" name="type" required>
+                    <!-- Options will be populated based on category -->
+                </select>
+                
+                <label for="sub_type">Sub-Type</label>
+                <input type="text" id="sub_type" name="sub_type" required>
+                
+                <label for="amount">Amount</label>
+                <input type="number" id="amount" name="amount" required>
+                
+                <label for="transaction_date">Date</label>
+                <input type="date" id="transaction_date" name="transaction_date" required>
+                
+                <button type="submit" class="btn">Save Transaction</button>
+            </form>
+        </div>
+    </div>
+    
+    <script src="js/scripts.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const params = new URLSearchParams(window.location.search);
+            const id = params.get('transaction_id');
+            if (id) {
+                getTransactionDetails(id);
+            }
+        });
+
+        function getTransactionDetails(id) {
+            fetch(`php/get_transaction_details.php?id=${id}`)
+                .then(response => response.json())
+                .then(data => {
+                    document.getElementById('transactionId').value = data.id;
+                    document.getElementById('category').value = data.category;
+                    updateTypeOptions();
+                    document.getElementById('type').value = data.type;
+                    document.getElementById('sub_type').value = data.sub_type;
+                    document.getElementById('amount').value = data.amount;
+                    document.getElementById('transaction_date').value = data.transaction_date;
+                    document.getElementById('formTitle').textContent = 'Edit Transaction';
+                });
+        }
+    </script>
+</body>
+</html>

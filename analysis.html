@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analysis</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="dashboard-container">
+        <div class="sidebar">
+            <ul>
+                <li><a href="add_edit_transaction.html">Add/Edit Transaction</a></li>
+                <li><a href="transaction_history.html">Transaction History</a></li>
+                <li><a href="analysis.html" class="selected">Analysis</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="#" onclick="logout()">Logout</a></li>
+            </ul>
+        </div>
+
+        <div class="content">
+            <h2>Analysis</h2>
+            <div class="analysis-charts">
+                <h3>Total Income vs Total Expense</h3>
+                <canvas id="incomeExpenseChart"></canvas>
+
+                <h3>Income Categories</h3>
+                <canvas id="incomeCategoryChart"></canvas>
+
+                <h3>Expense Categories</h3>
+                <canvas id="expenseCategoryChart"></canvas>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>

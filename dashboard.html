@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <div class="sidebar">
+            <ul>
+                <li><a href="add_edit_transaction.html" class="selected">Add/Edit Transaction</a></li>
+                <li><a href="transaction_history.html">Transaction History</a></li>
+                <li><a href="analysis.html">Analysis</a></li>
+                <li><a href="#" onclick="showProfile()">Profile</a></li>
+                <li><a href="#" onclick="logout()">Logout</a></li>
+            </ul>
+        </div>
+        
+        <div class="content">
+            <h3>Welcome to your Dashboard</h3>
+            <p>Select an option from the sidebar to get started.</p>
+        </div>
+    </div>
+
+    <div class="profile-popup" id="profilePopup"></div>
+    
+    <script src="js/scripts.js"></script>
+</body>
+</html>
