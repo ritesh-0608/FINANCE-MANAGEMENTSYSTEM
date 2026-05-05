@@ -70,3 +70,5 @@ Here is a look at the system in action:
 6. Open your browser and navigate to `http://localhost/finance-management-system`.
 
 
+
+<!-- minor format update -->
